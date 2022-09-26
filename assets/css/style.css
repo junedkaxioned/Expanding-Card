@@ -101,35 +101,66 @@ li {
   margin: 0 auto;
 }
 
-/*=================================
-  Header styling starts here
-=================================*/
-
-
-
-/*=================================
-  Header styling ends here
-=================================*/  
 
 /*=================================
   main styling starts here
 =================================*/
 
+.card-section{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
 
+.card-section .wrapper { width: 90%; }
+
+.cards {
+  display: flex;
+  width: 100%;
+}
+
+.card {
+  height: 80vh;
+  margin: 10px;
+  border-radius: 50px;
+  position: relative;
+  flex: 0.5;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  cursor: pointer;
+  transition: flex 2s ease-in;
+}
+
+.world { background-image: url("https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");}
+.forest { background-image: url("https://images.unsplash.com/photo-1572276596237-5db2c3e16c5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");}
+.beach { background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80");}
+.winter { background-image: url("https://images.unsplash.com/photo-1551009175-8a68da93d5f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");}
+.clouds { background-image: url("https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");}
+
+.active { flex: 5; }
+
+.card h3 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 26px;
+  font-weight: 900;
+  opacity: 0;
+}
+
+.active h3 {
+  opacity: 1;
+  transition: opacity 0.5s ease-in 0.4s;
+}
 
 /*=================================
   main styling ends here
 =================================*/
 
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
 
 /*media query starts*/
 /*media query for 995px starts here*/
